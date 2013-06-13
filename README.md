@@ -8,12 +8,12 @@ What is this?
 
 [JSTP](https://github.com/Fetcher/jstp-rfc) is an asynchronous, JSON based, REST-like protocol for the real time web. [MongoDB](http://www.mongodb.org/) is an awesome NoSQL database. 
 
-And **monje** is a tool to interact with the MongoDB via JSTP. Provides, via JSTP, a nice REST-like interface, but faster than HTTP and quite more flexible. 
+And **monje** is a tool to interact with the MongoDB via JSTP. **monje** provides, via JSTP, a nice REST-like interface, but faster than HTTP and quite more flexible. 
 
 How to use?
 -----------
 
-The API is unstable yet, and some knowledge of JSTP and the [node-jstp](https://github.com/Fetcher/node-jstp) library is needed in order to set up the JSTP Engine, but the endpoint setup is roughly described in the [Roadmap](https://github.com/Fetcher/monje/issues/1) so monje can be played with.
+The API is unstable yet, and some knowledge of JSTP and the [node-jstp](https://github.com/Fetcher/node-jstp) library is needed in order to set up the JSTP Engine, but the endpoint setup is roughly described in the [Roadmap](https://github.com/Fetcher/monje/issues/1) so **monje** can be played with.
 
 In other words, stay tuned!
 
