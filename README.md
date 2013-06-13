@@ -13,6 +13,12 @@ And **monje** is a tool to interact with the MongoDB via JSTP. **monje** provide
 How to use?
 -----------
 
+### Installation
+
+    npm install monje
+
+### API
+
 The API is unstable yet, and some knowledge of JSTP and the [node-jstp](https://github.com/Fetcher/node-jstp) library is needed in order to set up the JSTP Engine, but the endpoint setup is roughly described in the [Roadmap](https://github.com/Fetcher/monje/issues/1) so **monje** can be played with.
 
 In other words, stay tuned!
