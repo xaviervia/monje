@@ -1,6 +1,6 @@
 {
   "name": "monje",
-  "description": "MongoDB and JSTP on a NPM",
+  "description": "JSTP bindings for MongoDB",
   "version": "0.0.1",
   "contributors": [
     {
