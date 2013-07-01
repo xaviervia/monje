@@ -3,7 +3,7 @@ var monje = require('../../index.js');
 var second = false;
 var third = false;
 var Forgetable = {
-  bind: function (dispatch) {
+  bind: function (engine, answer, dispatch) {
     if (third) {    
       monje.jstp.delete({
         host: [['localhost', 33333, 'tcp']],

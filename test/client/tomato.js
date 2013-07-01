@@ -7,7 +7,7 @@ monje.jstp.delete({
 
 var second = false;
 var Meal = {
-  bind: function (dispatch) {
+  bind: function (engine, answer, dispatch) {
     if (second) {
       monje.jstp.patch({
         host: [['localhost', 33333, 'tcp']],
@@ -25,7 +25,7 @@ var Meal = {
     else second = true;
   },
 
-  nephew: function (dispatch) {
+  nephew: function (engine, answer, dispatch) {
     console.log(dispatch.body);
   }
 }

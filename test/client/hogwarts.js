@@ -1,14 +1,14 @@
 var monje = require('../../index.js');
 
 var Magic = {
-  bind: function (dispatch) {  
+  bind: function (engine, answer, dispatch) {  
     monje.jstp.get({
       host: [['localhost', 33333, 'tcp']],      
       resource: ['Magic', dispatch.resource[1], 'children', '0'],
     });
   },
 
-  bound: function (dispatch) {
+  bound: function (engine, answer, dispatch) {
     console.log("The child is: " + dispatch.body);
   }
 }

@@ -1,7 +1,7 @@
 var monje = require('../../index.js');
 
 var Forgetable = {
-  bind: function (dispatch) {
+  bind: function (engine, answer, dispatch) {
     monje.jstp.delete({
       host: [['localhost', 33333, 'tcp']],
       resource: dispatch.resource

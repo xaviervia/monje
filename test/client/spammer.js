@@ -1,7 +1,7 @@
 var monje = require('../../index.js');
 
 var Article = {
-  bindDad: function (dispatch) {
+  bindDad: function (engine, answer, dispatch) {
     monje.jstp.post({
       host: [['localhost', 33333, 'tcp']],
       resource: ['Article', '*', 'comments'],
@@ -12,7 +12,7 @@ var Article = {
     });
   },
 
-  bindSon: function (dispatch) {
+  bindSon: function (engine, answer, dispatch) {
     if (dispatch.referer[0] == 'Monje') console.log(dispatch);
   }
 }

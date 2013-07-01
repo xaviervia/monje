@@ -3,7 +3,7 @@ var monje = require('../../index.js');
 
 var first = true;
 var Magic = {
-  bind: function (dispatch) {  
+  bind: function (engine, answer, dispatch) {  
     if (first)
       monje.jstp.get({
         host: [['localhost', 33333, 'tcp']],      
@@ -13,7 +13,7 @@ var Magic = {
     first = false;
   },
 
-  bound: function (dispatch) {
+  bound: function (engine, answer, dispatch) {
     console.log("The child is: " + dispatch.body);
   }
 }

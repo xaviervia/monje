@@ -1,7 +1,7 @@
 var monje = require('../../index.js');
 
 var Castle = {
-  bind: function (dispatch) {
+  bind: function (engine, answer, dispatch) {
     console.log("The " + dispatch.body.house + " in " + dispatch.body.name + " says: " + dispatch.body.words);
   }
 }

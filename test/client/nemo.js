@@ -1,14 +1,14 @@
 var monje = require('../../index.js');
 
 var Nemo = {
-  bind: function (dispatch) {
+  bind: function (engine, answer, dispatch) {
     monje.jstp.delete({
       host: [['localhost', 33333, 'tcp']],
       resource: [dispatch.resource[0], dispatch.resource[1], 'name']
     });
   },
 
-  out: function (dispatch) {
+  out: function (engine, answer, dispatch) {
     console.log(dispatch);
   }
 }

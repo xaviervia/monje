@@ -1,7 +1,7 @@
 var monje = require('../../index.js');
 
 var Castle = {
-  bound: function (dispatch) {
+  bound: function (engine, answer, dispatch) {
     console.log("They say: " + dispatch.body);
   }
 }

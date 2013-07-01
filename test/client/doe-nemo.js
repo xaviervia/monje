@@ -3,7 +3,7 @@ var monje = require('../../index.js');
 var second = false;
 var third = false;
 var Nemo = {
-  bind: function (dispatch) {
+  bind: function (engine, answer, dispatch) {
     if (third) {
       monje.jstp.delete({
         host: [['localhost', 33333, 'tcp']],
@@ -21,7 +21,7 @@ var Nemo = {
     }
   },
 
-  out: function (dispatch) {
+  out: function (engine, answer, dispatch) {
     console.log(dispatch);
   }
 }

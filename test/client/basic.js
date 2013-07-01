@@ -1,7 +1,7 @@
 var monje = require('../../index.js');
 
 var User = {
-  bind: function (dispatch) {
+  bind: function (engine, answer, dispatch) {
     console.log(dispatch.body);
   }
 }

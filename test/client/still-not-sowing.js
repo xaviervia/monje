@@ -1,14 +1,14 @@
 var monje = require('../../index.js');
 
 var Castle = {
-  bind: function (dispatch) {
+  bind: function (engine, answer, dispatch) {
       monje.jstp.get({
         host: [['localhost', 33333, 'tcp']],      
         resource: ['Castle', dispatch.body._id, 'words']
       }, Castle.bind, Castle);
     }
   ,
-  bound: function (dispatch) {
+  bound: function (engine, answer, dispatch) {
     console.log("They say: " + dispatch.body);
   }
 }

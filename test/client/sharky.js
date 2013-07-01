@@ -7,7 +7,7 @@ monje.jstp.delete({
 
 var first = true;
 var Film = {
-  bind: function (dispatch) {
+  bind: function (engine, answer, dispatch) {
     console.log(dispatch.body);
   }
 }

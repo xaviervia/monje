@@ -2,7 +2,7 @@ var monje = require('../../index.js');
 
 var firstTime = true;
 var Castle = {
-  bind: function (dispatch) {
+  bind: function (engine, answer, dispatch) {
     if (firstTime) {
       firstTime = false;
       monje.jstp.get({

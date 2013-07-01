@@ -6,7 +6,7 @@ monje.jstp.delete({
 });
 
 var Meal = {
-  bind: function (dispatch) {
+  bind: function (engine, answer, dispatch) {
     monje.jstp.patch({
       host: [['localhost', 33333, 'tcp']],
       resource: ['Meal', dispatch.resource[1], 'variations', '1'],
@@ -16,7 +16,7 @@ var Meal = {
     });
   },
 
-  nephew: function (dispatch) {
+  nephew: function (engine, answer, dispatch) {
     console.log(dispatch.body);
   }
 }
