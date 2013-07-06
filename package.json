@@ -13,7 +13,7 @@
     }
   ],
   "dependencies": {
-    "jstp": "1.1.4",
+    "jstp": "1.1.5",
     "mongodb": "1.3.9"
   },
   "keywords": [
